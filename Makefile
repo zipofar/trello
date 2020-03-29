@@ -1,8 +1,8 @@
 build:
-	docker build -t task-manager .
+	docker-compose build
 
 bash:
-	docker run -it -v /home/ingprog/test/trello:/task_manager task-manager bash
+	docker-compose run --rm web bash
 
 up:
 	docker-compose up
